@@ -1,0 +1,138 @@
+/*
+===========================================
+Created by: Maro Al-Kades
+Contact:
+    Website ==> https://maro-al-kades.github.io/Personal-Website/#
+    whatsapp Or Calling ==> +201014344053
+    Facebook==> Maro Asam
+    Instagram==> al_kades_programming
+============================================ 
+/*
+
+
+
+/* Start Main */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Italiana', serif;
+}
+/* End Main */
+
+/* ======================== */
+
+body {
+    background: linear-gradient(#08004c, #41006d);
+    height: 100vh;
+}
+
+.logo {
+    color: #ffffff4f;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.logo:hover {
+    color: white;
+    transition: 1s;
+    padding: 25px;
+    letter-spacing: 10px;
+    opacity: 1;
+}
+.logo h1:hover {
+    opacity: 1;
+    letter-spacing: 5px;
+}
+/* ======================== */
+
+.nav {
+    background-image: url("../images/stars1.png");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======================== */
+
+ul {
+    text-align: center;
+}
+ul:hover li a {
+    opacity: 0;
+}
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 14;
+    margin-bottom: 14;
+    margin-right: 0;
+    margin-left: 0;
+    width: 300px;
+}
+
+/* ======================== */
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 5px;
+    background-color: darkblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 180px;
+    padding-left: 100px;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 50px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 10;
+}
+ul li a:hover {
+    transform: scale(1.5);
+    background-color: darkred;
+    opacity: 1;
+}
+ul li::after {
+    content: attr(data-text);
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    letter-spacing: 50px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+ul li:hover:after {
+    opacity: 0.5;
+    letter-spacing: 5px;
+}
+ul li::before {
+    content: '';
+    width: 180px;
+    height: 80px;
+    background: gold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,70%);
+    border-radius: 50%;
+    box-shadow: 0 0 80px orangered;
+    opacity: 0;
+    transition: 0.5s;
+}
+ul li:hover::before {
+    opacity: 0.8;
+    width: 80px;
+}
